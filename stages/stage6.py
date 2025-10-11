@@ -47,7 +47,7 @@ if canvas_result.image_data is not None:
         with st.spinner("模型推理中..."):
             tensor_img = transform_image(img_gray)
             class_label, confidence, probs = predict_image(tensor_img)
-
+        print(probs)
         if confidence > 50:
             st.success("预测成功！")
         else:

@@ -75,7 +75,6 @@ def initiate_model():
 
 
 
-
 def predict_image(img):
     
     # Convert to a batch of 1
